@@ -21,6 +21,9 @@ $princess = new Princesse();
 $sorcer = new Sorcier();
 
 $princess->setNom("Leia");
-echo $princess->getNom();
+echo $princess->getNom()." : ".$princess->getVie()." vies, "."position x : ".$princess->x." / position y : ".$princess->y." - saved : ".$princess->getSaved();
 
-echo $sorcer->setNom("Gandalf");
+echo "<br>";
+
+$sorcer->setNom("Gandalf");
+echo $sorcer->getNom()." : ".$sorcer->getVie()." vies, "."position x : ".$sorcer->x." / position y : ".$sorcer->y;

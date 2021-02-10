@@ -3,7 +3,7 @@
 class Princesse extends personnage
 {
 
-    private $saved;
+    private int $saved;
 
     public function __construct() {
         // Surcharge de la méthode construct, on éxécute celle de la classe parent puis on redéfini les propriétés qui
@@ -16,5 +16,20 @@ class Princesse extends personnage
         $this->y = 450;
     }
 
+    /**
+     * @return int
+     */
+    public function getSaved(): int
+    {
+        return $this->saved;
+    }
+
+    /**
+     * @param int $saved
+     */
+    public function setSaved(int $saved): void
+    {
+        $this->saved = $saved;
+    }
 
 } 

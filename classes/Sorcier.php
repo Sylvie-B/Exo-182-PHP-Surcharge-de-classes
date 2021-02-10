@@ -12,3 +12,4 @@ class Sorcier extends Personnage
         $this->y = 125;
     }
 }
+
